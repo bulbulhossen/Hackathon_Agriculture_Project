@@ -8,8 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.TextView;
 
-import com.bulbulhossen.hackathon_krishi.Gridview_Main_Activity.Grid_main_Activity;
-import com.bulbulhossen.hackathon_krishi.ListView_Class.List_main;
+import com.bulbulhossen.hackathon_krishi.GridView_Adapter_Gallery.Grid_main_Activity;
 import com.bulbulhossen.hackathon_krishi.R;
 
 /**
@@ -49,7 +48,7 @@ public class Splash_Activity extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(1900);
-                    Intent startMainscreen = new Intent(getApplicationContext(), List_main.class);
+                    Intent startMainscreen = new Intent(getApplicationContext(), Grid_main_Activity.class);
                     startActivity(startMainscreen);
                     finish();
                 } catch (InterruptedException e) {

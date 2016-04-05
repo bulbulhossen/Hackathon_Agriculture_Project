@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#3D4F5D"
 
-    tools:context=".Gridview_Main_Activity.Grid_main_Activity">
+    tools:context=".GridView_Adapter_Gallery.Grid_main_Activity">
 
     <com.twotoasters.jazzylistview.JazzyGridView
         android:id="@+id/gridView"

@@ -1,4 +1,4 @@
-package com.bulbulhossen.hackathon_krishi.Gridview_Main_Activity;
+package com.bulbulhossen.hackathon_krishi.GridView_Adapter_Gallery;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -9,8 +9,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.bulbulhossen.hackathon_krishi.GridView_Adapter_Gallery.GridViewAdapter;
-import com.bulbulhossen.hackathon_krishi.GridView_Adapter_Gallery.Gridview_ImageItem;
+import com.bulbulhossen.hackathon_krishi.Button_Style_Gallery.Button_style_main;
+import com.bulbulhossen.hackathon_krishi.Details_class.Details_Class;
+import com.bulbulhossen.hackathon_krishi.ListView_Class.List_main;
 import com.bulbulhossen.hackathon_krishi.R;
 
 import java.util.ArrayList;
@@ -61,19 +62,16 @@ public class Grid_main_Activity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 
                 switch (position) {
-/*                    case 0:
-                        i = new Intent(Grid_main_Activity.this, Robinath_Tagore_Home.class);
+                    case 0:
+                        i = new Intent(Grid_main_Activity.this, List_main.class);
                         break;
                     case 1:
-                        i = new Intent(Grid_main_Activity.this, Kazi_Nazrul_Home.class);
+                        i = new Intent(Grid_main_Activity.this, Button_style_main.class);
                         break;
                     case 2:
-                        i = new Intent(Grid_main_Activity.this, Joshim_Home.class);
-                       // overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
+                        i = new Intent(Grid_main_Activity.this, Details_Class.class);
+                       overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
                         break;
-                    case 3:
-                        i = new Intent(Grid_main_Activity.this, Shamsur_Home.class);
-                        break;*/
                 }
 
                 startActivity(i);

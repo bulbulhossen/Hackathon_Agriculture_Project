@@ -16,8 +16,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Gridview_Main_Activity.Grid_main_Activity"></activity>
+        <activity android:name=".GridView_Adapter_Gallery.Grid_main_Activity"></activity>
         <activity android:name=".ListView_Class.List_main"></activity>
+        <activity android:name=".Details_class.Details_Class"></activity>
+        <activity android:name=".Button_Style_Gallery.Button_style_main"></activity>
     </application>
 
 </manifest>

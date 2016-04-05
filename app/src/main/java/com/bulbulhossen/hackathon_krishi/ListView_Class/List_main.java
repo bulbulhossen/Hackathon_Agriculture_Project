@@ -1,5 +1,6 @@
 package com.bulbulhossen.hackathon_krishi.ListView_Class;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,6 +11,8 @@ import android.widget.Toast;
 import com.bulbulhossen.hackathon_krishi.R;
 
 public class List_main extends AppCompatActivity {
+
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,21 @@ public class List_main extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Toast.makeText(List_main.this, "" + ad.getItem(position), Toast.LENGTH_SHORT).show();
+
+/*                switch (position) {
+                    case 0:
+                        intent = new Intent(List_main.this, Details_Class.class);
+                        break;
+                    case 1:
+                        intent = new Intent(List_main.this, Grid_main_Activity.class);
+                        break;
+                    case 2:
+                        intent = new Intent(List_main.this, Button_style_main.class);
+                        break;
+
+                }
+
+                startActivity(intent);*/
 
             }
         });
