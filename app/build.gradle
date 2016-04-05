@@ -20,19 +20,13 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-
     /*listview animation libary */
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.twotoasters.jazzylistview:library:1.2.1'
     compile 'com.twotoasters.jazzylistview:library-recyclerview:1.2.1'
-
-
     /*GIf image libary */
-
     compile 'com.flaviofaria:kenburnsview:1.0.7'
-
-
-
+    compile files('libss/LiveChatWindow.jar')
 }

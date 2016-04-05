@@ -13,6 +13,7 @@ import com.bulbulhossen.hackathon_krishi.Button_Style_Gallery.Button_style_main;
 import com.bulbulhossen.hackathon_krishi.Details_class.Details_Class;
 import com.bulbulhossen.hackathon_krishi.ListView_Class.List_main;
 import com.bulbulhossen.hackathon_krishi.R;
+import com.bulbulhossen.hackathon_krishi.live.ExampleActivity;
 
 import java.util.ArrayList;
 
@@ -70,6 +71,11 @@ public class Grid_main_Activity extends AppCompatActivity {
                         break;
                     case 2:
                         i = new Intent(Grid_main_Activity.this, Details_Class.class);
+                       overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
+                        break;
+
+                    case 3:
+                        i = new Intent(Grid_main_Activity.this, ExampleActivity.class);
                        overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
                         break;
                 }
